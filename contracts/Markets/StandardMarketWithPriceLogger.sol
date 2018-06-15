@@ -28,7 +28,7 @@ contract StandardMarketWithPriceLogger is StandardMarket {
     /// @param _marketMaker Market maker contract
     /// @param _fee Market fee
     /// @param _startDate Start date for price logging
-    function StandardMarketWithPriceLogger(address _creator, Event _eventContract, MarketMaker _marketMaker, uint24 _fee, uint _startDate)
+    constructor(address _creator, Event _eventContract, MarketMaker _marketMaker, uint24 _fee, uint _startDate)
         public
         StandardMarket(_creator, _eventContract, _marketMaker, _fee)
     {
