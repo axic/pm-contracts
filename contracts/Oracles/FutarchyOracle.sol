@@ -56,7 +56,7 @@ contract FutarchyOracle is Oracle {
     /// @param fee Market fee
     /// @param _tradingPeriod Trading period before decision can be determined
     /// @param startDate Start date for price logging
-    function FutarchyOracle(
+    constructor(
         address _creator,
         EventFactory eventFactory,
         Token collateralToken,

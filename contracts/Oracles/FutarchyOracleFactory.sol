@@ -35,7 +35,7 @@ contract FutarchyOracleFactory {
     /// @dev Constructor sets event factory contract
     /// @param _eventFactory Event factory contract
     /// @param _marketFactory Market factory contract
-    function FutarchyOracleFactory(EventFactory _eventFactory, StandardMarketWithPriceLoggerFactory _marketFactory)
+    constructor(EventFactory _eventFactory, StandardMarketWithPriceLoggerFactory _marketFactory)
         public
     {
         require(address(_eventFactory) != 0 && address(_marketFactory) != 0);
